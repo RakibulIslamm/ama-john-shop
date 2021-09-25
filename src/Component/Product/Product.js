@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './Product.css';
 import { Rating } from 'semantic-ui-react';
-import RatingExampleStar from '../Ratings/Ratings';
 
 
 const Product = (props) => {
@@ -43,7 +42,6 @@ const Product = (props) => {
                             {
                                 features.map(feature => <li key={feature.description}>{feature.description} {feature.value}</li>)
                             }
-                            <RatingExampleStar></RatingExampleStar>
                         </div>
                     </div>
                 </div>
